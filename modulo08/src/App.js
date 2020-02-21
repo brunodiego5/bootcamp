@@ -1,13 +1,15 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 
 function App() {
   const [techs, setTechs] = useState([]);
   const [newTech, setNewTech] = useState('');
 
-  function handleAdd() {
+  /* para o js montar a função só quando os states mudarem (newTech, techs) */
+  /* usar quando a função tem dependencia de states */
+  const handleAdd = useCallback(() => {
     setTechs([...techs, newTech]);
     setNewTech('');
-  }
+  }, [newTech, techs]);
 
   /* Quando array vazia (não vai observar nenhum state) executa 1 vez = componentdidmount */
   useEffect(() => {
