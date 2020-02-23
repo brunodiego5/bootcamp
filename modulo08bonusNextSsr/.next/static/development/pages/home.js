@@ -15022,7 +15022,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!*****************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fhome&absolutePagePath=C%3A%5Cworkspace%5Cbootcamp%5Cmodulo08bonusNextSsr%5Cpages%5Chome.js ***!
   \*****************************************************************************************************************************************/
@@ -15045,5 +15045,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=home.js.map

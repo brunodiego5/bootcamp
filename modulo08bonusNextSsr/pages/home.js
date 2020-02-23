@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Link from 'next/link';
 import Head from 'next/head';
-import withAnalytics from '../src/hocs/withAnalytcs';
+import withAnalytics from '~/hocs/withAnalytcs';
 
 const Title = styled.h1`
   color: #069;
