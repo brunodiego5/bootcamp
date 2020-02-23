@@ -12680,7 +12680,7 @@ User.getInitialProps = function _callee() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!*******************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fusers&absolutePagePath=C%3A%5Cworkspace%5Cbootcamp%5Cmodulo08bonusNextSsr%5Cpages%5Cusers.js ***!
   \*******************************************************************************************************************************************/
@@ -12703,5 +12703,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=users.js.map
