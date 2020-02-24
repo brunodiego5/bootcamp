@@ -4,7 +4,7 @@ import Project from '../model/Project';
 
 class ProjectController {
   async index(req, res) {
-    const projects = await Project.find();
+    const projects = await Project.find().populate('tasks');
 
     return res.json(projects);
   }
@@ -20,12 +20,12 @@ class ProjectController {
 
     const { title } = req.body;
 
-    const projectExists = await Project.find({
-      title,
+    const projectExists = await Project.findOne({
+      where: { title },
     });
 
     if (projectExists) {
-      return res.status(400).json({ error: 'Project already existis.' });
+      return res.status(400).json({ error: 'Project already exists.' });
     }
 
     const project = await Project.create({ title });
@@ -53,7 +53,7 @@ class ProjectController {
   async destroy(req, res) {
     const { id } = req.params;
 
-    await Project.findOneAndDelete(id);
+    await Project.findOneAndDelete({ _id: id });
 
     return res.json();
   }
